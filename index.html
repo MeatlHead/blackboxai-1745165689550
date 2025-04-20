@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elohim Travels - Explore the World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a href="#" class="text-2xl font-bold text-indigo-600">Elohim Travels</a>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#destinations" class="hover:text-indigo-600 transition">Destinations</a>
+        <a href="#services" class="hover:text-indigo-600 transition">Services</a>
+        <a href="#testimonials" class="hover:text-indigo-600 transition">Testimonials</a>
+        <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+      </nav>
+      <button class="md:hidden text-gray-600 focus:outline-none" id="menu-btn">
+        <i class="fas fa-bars fa-lg"></i>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="md:hidden bg-white shadow-md hidden" id="mobile-menu">
+      <nav class="flex flex-col p-4 space-y-3">
+        <a href="#destinations" class="hover:text-indigo-600 transition">Destinations</a>
+        <a href="#services" class="hover:text-indigo-600 transition">Services</a>
+        <a href="#testimonials" class="hover:text-indigo-600 transition">Testimonials</a>
+        <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-24 bg-gradient-to-r from-indigo-600 to-indigo-400 text-white">
+    <div class="container mx-auto px-6 py-20 text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Discover Your Next Adventure</h1>
+      <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">Explore the world with Elohim Travels. Find the best destinations, tours, and travel experiences tailored just for you.</p>
+      <a href="#destinations" class="inline-block bg-white text-indigo-600 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition">Explore Destinations</a>
+    </div>
+  </section>
+
+  <!-- Destinations Section -->
+  <section id="destinations" class="container mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-12">Popular Destinations</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transition">
+        <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg" alt="Paris" class="w-full h-56 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Paris, France</h3>
+          <p class="text-gray-600">Experience the city of lights, romance, and world-class cuisine.</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transition">
+        <img src="https://images.pexels.com/photos/1619311/pexels-photo-1619311.jpeg" alt="Maldives" class="w-full h-56 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Maldives</h3>
+          <p class="text-gray-600">Relax in tropical paradise with crystal-clear waters and white sandy beaches.</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transition">
+        <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg" alt="New York" class="w-full h-56 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">New York, USA</h3>
+          <p class="text-gray-600">Discover the city that never sleeps with iconic landmarks and vibrant culture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-indigo-50 py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="text-center p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+          <i class="fas fa-plane-departure fa-3x text-indigo-600 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Flight Booking</h3>
+          <p class="text-gray-600">Book flights to your favorite destinations with ease and great deals.</p>
+        </div>
+        <div class="text-center p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+          <i class="fas fa-hotel fa-3x text-indigo-600 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Hotel Reservations</h3>
+          <p class="text-gray-600">Find and reserve the best hotels that suit your budget and preferences.</p>
+        </div>
+        <div class="text-center p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+          <i class="fas fa-route fa-3x text-indigo-600 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Custom Tours</h3>
+          <p class="text-gray-600">Tailor-made tours designed to give you unique and memorable experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="container mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <p class="italic text-gray-700 mb-4">"Elohim Travels made our honeymoon unforgettable. The service was impeccable and the destinations breathtaking."</p>
+        <div class="flex items-center">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client 1" class="w-12 h-12 rounded-full mr-4" />
+          <div>
+            <p class="font-semibold">Sarah M.</p>
+            <p class="text-gray-500 text-sm">New York, USA</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <p class="italic text-gray-700 mb-4">"Booking with Elohim Travels was seamless and the custom tours were exactly what we wanted."</p>
+        <div class="flex items-center">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Client 2" class="w-12 h-12 rounded-full mr-4" />
+          <div>
+            <p class="font-semibold">James T.</p>
+            <p class="text-gray-500 text-sm">London, UK</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <p class="italic text-gray-700 mb-4">"Highly recommend Elohim Travels for anyone looking for a hassle-free travel experience."</p>
+        <div class="flex items-center">
+          <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Client 3" class="w-12 h-12 rounded-full mr-4" />
+          <div>
+            <p class="font-semibold">Emily R.</p>
+            <p class="text-gray-500 text-sm">Sydney, Australia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-indigo-600 text-white py-16">
+    <div class="container mx-auto px-6 max-w-3xl">
+      <h2 class="text-3xl font-bold mb-8 text-center">Get in Touch</h2>
+      <form class="space-y-6" action="#" method="POST">
+        <div>
+          <label for="name" class="block mb-2 font-semibold">Name</label>
+          <input type="text" id="name" name="name" required class="w-full p-3 rounded text-gray-800" />
+        </div>
+        <div>
+          <label for="email" class="block mb-2 font-semibold">Email</label>
+          <input type="email" id="email" name="email" required class="w-full p-3 rounded text-gray-800" />
+        </div>
+        <div>
+          <label for="message" class="block mb-2 font-semibold">Message</label>
+          <textarea id="message" name="message" rows="4" required class="w-full p-3 rounded text-gray-800"></textarea>
+        </div>
+        <button type="submit" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded hover:bg-gray-100 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-6 mt-12 shadow-inner">
+    <p class="text-gray-600">&copy; 2024 Elohim Travels. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
